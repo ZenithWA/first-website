@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--always start html with this command-->
+<html lang="en"><!--write this to set a language-->
+    <head>
+        <meta charset="UTF-8"><!--wrote this after ''character choding wwas not declared'' error-->
+        <meta name="author" content="Ahmad Wajahat" >
+        <meta name="description" content="This page contains all the things i am learning" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" ><!--wrote this so my page can adapt to any device-->
+       <title>My First Website</title>
+       <link rel="icon" href="images/html-icon.webp" type="image/x-icon"><!--wrote this to make a icon-->
+       <!--just a little css to make the color of webpage dark, its comfortable that way-->
+      <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <h1>My first try to make a Website</h1>
+        <hr><!--wrote this to make a horisontal line-->
+        <form action="actionpage.php" method="post">
+            <div>
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Zoro" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="lname">Surname</label>
+                <input type="text" id="lname" name="lname" placeholder="Roronoa" required>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="reset">
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit">
+            </div>
+
+        </form>
+        <hr>
+        <h1>I like <a href="pizza.html" target="_self" title="Explore Pizza">  pizza!</a> </h1>
+        <br><!--wrote this to make a space-->
+        <h2>I like pizza!</h2>
+        <br>
+        <h3>I like pizza!</h3>
+        <br>
+        <h4>I like pizza!</h4>
+        <br>
+        <h5>I like pizza!</h5>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Pizza" target="_blank"><img src="images/pizzagrab.jpg" alt="this is an image of a hand grabbing a small pizza slice" height="400" width="400" title="I am hungry" ><!--added image with a description and hyperlink-->
+        </a>
+        <br>
+        <button onclick="dothis()" style="background-color: darkblue; color: chocolate; border-radius: 5px;">Click Me!</button>
+        <!--added button with a little bit of JS for functionality-->
+        <h3 id="test">Do Not Click It! I'm Warning You.</h3>
+        <script>
+            function dothis(params) {
+                document.getElementById("test").innerHTML = "Told You Not To Click It. It's Useless. That's All This Stupid Button Does. It's A Prank.";
+            }
+        </script>
+        <br>
+        <div style="background-color: darkslategrey;">
+        <p> <span style="color: green;">So this supposed to be a first paragraph.</span>  I am learning <abbr title="HyperText Markup Language">HTML</abbr> I can change text to <strong>strong</strong>, <b>bold</b>, <i>italic</i> and also <em>emphasize it</em> or make it <small>small</small>. <sub>Subscript</sub> and <sup>Superscript</sup> are also not a problem.
+            <br> Want to make a text <ins>inserted</ins>, <mark>marked</mark> or even <del>delete</del> cross it? I GOT YOU.</p><!--wrote this to show different fonts-->
+           
+            <br> 
+            <p>Next paragraph is going to be a long sample text which i typed using ''lorem''</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, nisi, earum, tempora commodi harum rem deleniti reiciendis ab nostrum ea itaque eaque dolorum. A, quas fuga quidem nulla natus deserunt.</p>    
+        <p>I have no idea what it means, but no worries, you can always <a href="https://www.google.com" target="_blank" title="This takes you to Google">Google</a> it.</p>
+        </div>
+        <iframe src="ad.html" frameborder="0"; width="800" height="100" style="background-color: azure;"></iframe><!--this can be used to put other pages in your webpage, i.e. ads-->
+        <br>
+        <br>
+        <br>
+        <p>I also love music. I listen to it 24/7. Here's my favorite track at the moment.(I will add it later, here's something other to listen.)</p>
+        <audio src="audios/TopTen-JeremyBlake.mp3" controls loop><src="audios/TopTen-JeremyBlake.mp3"> This browser does not support HTML5 audio </audio>
+        <br>
+        <br>
+        <br>
+        <p>Who doesn't like Movies? Here's a iconic moment from a classic film Terminator 2: Judgment Day(1991) </p>
+        <video src="Videos/Terminator.mp4" width="650" controls> <source src="Videos/Terminator.mp4">This browser does not support HTML5 video</video>
+        <br>
+        <br>
+        <br>
+        <p>Let's take a look at my Family Table</p>
+        <table bgcolor="black" width="900" height="800">
+            <tr bgcolor="grey" align="center">
+                <th>Name</th>
+                <th>Role</th>
+                <th>Age</th>
+                <th>Favorite thing</th>
+
+
+            </tr>
+            <tr bgcolor="grey" align="center">
+                <td>Sadaqat</td>
+                <td>Father</td>
+                <td>48</td>
+                <td>Deutsch</td>
+            </tr>
+            <tr bgcolor="green" align="center">
+                <td>Zakia</td>
+                <td>Mother</td>
+                <td>42</td>
+                <td>Family</td>
+            </tr>
+            <tr bgcolor="grey" align="center">
+                <td>Amina</td>
+                <td>Oma</td>
+                <td>88</td>
+                <td>Me</td>
+            </tr>
+            <tr bgcolor="green" align="center">
+                <td>Naima</td>
+                <td>Big Sis</td>
+                <td>23</td>
+                <td>Deenice</td>
+            </tr>
+            <tr bgcolor="orange" align="center">
+                <td>Wajahat</td>
+                <td>Me</td>
+                <td>22</td>
+                <td>Pizza</td>
+            </tr>
+            <tr bgcolor="green" align="center">
+                <td>Tooba</td>
+                <td>Lil Sis</td>
+                <td>18</td>
+                <td>Genshin</td>
+            </tr>
+            <tr bgcolor="grey" align="center">
+                <td>Frasat</td>
+                <td>Lil Bro</td>
+                <td>16</td>
+                <td>Forests</td>
+            </tr>
+            <tr bgcolor="green" align="center">
+                <td>Afroz</td>
+                <td>Lil Bro</td>
+                <td>11</td>
+                <td>IPad</td>
+            </tr>
+            <tr bgcolor="grey" align="center">
+                <td>Unknown</td>
+                <td>is not born yet</td>
+                <td>0</td>
+                <td>Probably Me</td>
+            </tr>
+        </table>
+
+        <hr>
+    &lt;&lt;&lt; &copy; Wajahat Ahmad &gt;&gt;&gt;<!--wrote this to show use of enteties-->
+
+
+
+
+        
+    </body>
+</html>
